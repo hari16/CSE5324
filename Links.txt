@@ -1,0 +1,2 @@
+http://www.google.com/design/spec/material-design/introduction.html
+https://developer.android.com/google/play-services/location.html

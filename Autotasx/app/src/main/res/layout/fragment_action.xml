@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"    android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="com.hari.autotasx.ActionFragment"
+    android:id="@+id/framelay"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <CheckBox
+        android:layout_width="202dp"
+        android:layout_height="75dp"
+        android:text="SILENT"
+        android:id="@+id/silent"
+        android:checked="false"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:layout_width="229dp"
+        android:layout_height="86dp"
+        android:text="SMS"
+        android:id="@+id/sms"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:layout_width="304dp"
+        android:layout_height="84dp"
+        android:text="WIFI"
+        android:id="@+id/wifi"
+        android:checked="false"
+        android:textSize="25dp" />
+
+    <com.hari.autotasx.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:elevation="@dimen/fab_elevation"
+        android:background="@drawable/fab_background"
+        android:stateListAnimator="@animator/fab_anim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="110dp">
+
+        <ImageView
+            android:layout_width="@dimen/fab_icon_size"
+            android:layout_height="@dimen/fab_icon_size"
+            android:src="@drawable/fab_icons"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"/>
+
+    </com.hari.autotasx.FloatingActionButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:text="Please select actions and click &quot;+&quot;"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp" />
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

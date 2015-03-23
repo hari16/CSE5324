@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.hari.autotasx.ActionFragment"
+    android:id="@+id/framelay">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.hari.autotasx.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:elevation="@dimen/fab_elevation"
+        android:background="@drawable/fab_background"
+        android:stateListAnimator="@animator/fab_anim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="110dp">
+
+        <ImageView
+            android:layout_width="@dimen/fab_icon_size"
+            android:layout_height="@dimen/fab_icon_size"
+            android:src="@drawable/fab_icons"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"/>
+
+    </com.hari.autotasx.FloatingActionButton>
+<!--
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">-->
+
+    <CheckBox
+        android:layout_width="202dp"
+        android:layout_height="75dp"
+        android:text="SILENT"
+        android:id="@+id/silent"
+        android:checked="false"
+        android:textSize="25dp" />
+
+<!--</RelativeLayout>-->
+
+    <CheckBox
+        android:layout_width="304dp"
+        android:layout_height="188dp"
+        android:text="WIFI"
+        android:id="@+id/wifi"
+        android:checked="false"
+        android:textSize="25dp"
+        android:layout_gravity="left|top" />
+
+    <CheckBox
+        android:layout_width="229dp"
+        android:layout_height="312dp"
+        android:text="SMS"
+        android:id="@+id/sms"
+        android:layout_gravity="left"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:textSize="25dp" />
+
+</FrameLayout>

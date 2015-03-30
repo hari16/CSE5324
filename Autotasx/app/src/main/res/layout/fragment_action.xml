@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"    android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="com.hari.autotasx.ActionFragment"
+    android:id="@+id/framelay"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:textColor="#ff000000"
+            android:layout_height="wrap_content"
+            android:text=" Profile Name"
+            android:id="@+id/textView"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:inputType="text"
+            android:textColor="#ff000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+             />
+
+        </LinearLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/silent"
+            android:id="@+id/silent"
+            android:checked="false"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+             />
+
+        <CheckBox
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sms"
+            android:id="@+id/sms"
+            android:checked="false"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+             />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi"
+            android:id="@+id/wifi"
+            android:checked="false"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+             />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rem"
+            android:id="@+id/rem"
+            android:checked="false"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#ff000000"
+            android:layout_height="wrap_content"
+            android:text="Reminder"
+            android:id="@+id/textView1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:inputType="text"
+            android:textColor="#ff000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+
+    <com.hari.autotasx.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:elevation="@dimen/fab_elevation"
+        android:background="@drawable/fab_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="280dp">
+
+        <ImageView
+            android:layout_width="@dimen/fab_icon_size"
+            android:layout_height="@dimen/fab_icon_size"
+            android:src="@drawable/fab_icons"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"/>
+
+    </com.hari.autotasx.FloatingActionButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Please select actions and click &quot;+&quot;"
+        android:id="@+id/textView2"
+        android:textSize="15sp"
+        android:textColor="#ff000000"
+        android:textStyle="italic"
+        android:shadowColor="#ff69ff59"
+        android:theme="@style/AppTheme"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
